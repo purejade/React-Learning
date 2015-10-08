@@ -1,0 +1,16 @@
+npm install: package the project
+
+npm start: run the project
+
+package.json: description
+
+webpack.config.js: configuration
+
+view: http://localhost:8080/webpack-dev-server/bundle
+
+reference:
+ 	
+ 	 https://webpack.github.io/docs/stylesheets.html
+ 	 http://www.infoq.com/cn/articles/react-and-webpack?utm_source=tuicool 
+ 	 http://www.cnblogs.com/skylar/p/React-Webpack-ES6.html 
+	 https://github.com/purejade/React-Learning  （github代码）

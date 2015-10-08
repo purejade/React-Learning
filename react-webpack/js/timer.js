@@ -23,7 +23,7 @@ let Timer = React.createClass({
     var elapsed = Math.round(this.state.elapsed/100);
     var seconds = (elapsed/10).toFixed(1);
     return(
-        <p className="timer">This example was started <b>{seconds} seconds</b> ago.</p>
+        <p className="timer">This nihao d example was started  ok<b>{seconds} seconds</b> ago.</p>
     );
   }
 });

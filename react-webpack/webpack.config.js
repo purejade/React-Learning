@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+
 module.exports = {
     entry: [
       'webpack/hot/only-dev-server',
@@ -13,13 +14,16 @@ module.exports = {
             { test: /\.js?$/, loaders: ['react-hot', 'babel'], exclude: /node_modules/ },
             { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
             { test: /\.css$/, loader: "style!css" },
-            {test: /\.less/,loader: 'style-loader!css-loader!less-loader'}
+            {test: /\.less/,loader: 'style-loader!css-loader!less-loader'},
+            { test: /\.styl$/, loader: 'style-loader!css-loader!stylus-loader' }
         ]
     },
+  
     resolve:{
         extensions:['','.js','.json']
     },
     plugins: [
+      new webpack.HotModuleReplacementPlugin(),
       new webpack.NoErrorsPlugin()
     ]
 };
